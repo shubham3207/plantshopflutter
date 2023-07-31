@@ -17,9 +17,9 @@ void main() {
         home: const SignIn(),
       ));
       Finder email = find.byKey(const ValueKey("txtEmail"));
-      await tester.enterText(email, "manishsilwal123@gmail.com");
+      await tester.enterText(email, "kripathapa@gmail.com");
       Finder password = find.byKey(const ValueKey("txtPassword"));
-      await tester.enterText(password, "manish12345");
+      await tester.enterText(password, "kripa123");
       Finder signup = find.byKey(const ValueKey("btnRegister"));
       await tester.dragUntilVisible(
         signup,

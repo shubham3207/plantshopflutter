@@ -57,12 +57,12 @@ class MyApp extends StatelessWidget {
             initialRoute: '/',
             navigatorKey: MyApp.navigatorKey,
             theme: ThemeData(
-                primaryColor: Colors.teal,
-                accentColor: Colors.teal,
-                primarySwatch: Colors.teal,
-                appBarTheme: AppBarTheme(color: Colors.teal)),
+                primaryColor: Colors.brown,
+                accentColor: Colors.brown,
+                primarySwatch: Colors.brown,
+                appBarTheme: AppBarTheme(color: Colors.brown)),
             routes: {
-              '/': (context) => const SignIn(),
+              '/': (context) => const WearOsLogin(),
               '/signin': (context) => const SignIn(),
               '/navigation_screen': (context) => NavigationDrawers(),
               '/register': (context) => const SignOut(),

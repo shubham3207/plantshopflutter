@@ -14,10 +14,10 @@ class ReviewApi {
       var dio = HttpServices().getDioInstance();
       Response response;
       print(id);
-      SharedPreferences preferences;
-      preferences = await SharedPreferences.getInstance();
-      String? token = preferences.getString('token');
-      // const token = Token;
+      // SharedPreferences preferences;
+      // preferences = await SharedPreferences.getInstance();
+      // String? token = preferences.getString('token');
+      const token = Token;
       print(token);
       response = await dio.put(reviewurl,
           data: {"productId": id, "rating": rating, "comment": comment},

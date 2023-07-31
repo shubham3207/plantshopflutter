@@ -31,7 +31,7 @@ class _AllProductState extends State<AllProduct> {
                   "All Product",
                   style: TextStyle(
                     fontSize: 15,
-                    color: Colors.green,
+                    color: Colors.brown[300],
                     fontWeight: FontWeight.bold,
                   ),
                 ),
@@ -85,7 +85,7 @@ class _AllProductState extends State<AllProduct> {
                                               lstproducts[i].price.toString(),
                                               style: TextStyle(
                                                   fontSize: 5,
-                                                  color: Colors.teal),
+                                                  color: Colors.brown),
                                             ),
                                           ],
                                         ),

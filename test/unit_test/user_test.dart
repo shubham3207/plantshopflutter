@@ -13,7 +13,7 @@ void main() {
     });
     test("user login test", () async {
       bool expectedResult = true;
-      String email = "shubham@gmail.com";
+      String email = "rohan@gmail.com";
       String password = "12345678";
       User user = User(email: email, password: password);
       bool actual = await UserRepository().loginUser(user);
@@ -44,9 +44,9 @@ void main() {
 
     test("user register test", () async {
       bool expectedResult = true;
-      String name = "manish ";
-      String email = "manish@gmail.com";
-      String password = "manish12349";
+      String name = "kripathapaaaa ";
+      String email = "kripaathapaaa@gmail.com";
+      String password = "kripa12345676";
       User user = User(name: name, email: email, password: password);
       bool actual = await UserRepository().registerUser(user);
       expect(actual, expectedResult);
@@ -57,7 +57,7 @@ void main() {
 
       String productId = "63e8fd4ac44a30a63cd0b89b";
 
-      String comment = "manoj@gmail.com";
+      String comment = "hari@gmail.com";
 
       int rating = 2;
 

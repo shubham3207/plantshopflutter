@@ -43,13 +43,13 @@ class UserAPI {
       if (response.statusCode == 201) {
         LoginResponse loginResponse = LoginResponse.fromJson(response.data);
         String email = (response.data['user']['email']);
-        token = loginResponse.token;
+        // token = loginResponse.token;
 
-        SharedPreferences preferences;
+        // SharedPreferences preferences;
 
-        preferences = await SharedPreferences.getInstance();
-        preferences.setString("email", '$email');
-        preferences.setString("token", '$token');
+        // preferences = await SharedPreferences.getInstance();
+        // preferences.setString("email", '$email');
+        // preferences.setString("token", '$token');
 
         return true;
       }
@@ -63,9 +63,9 @@ class UserAPI {
   Future<bool> changePassword(
       String? oldPassword, String? newPassword, String? passwordConfirm) async {
     bool changePassword = false;
-    SharedPreferences sharedPreferences = await SharedPreferences.getInstance();
-    String? passwordtoken = sharedPreferences.getString("token");
-    // const passwordtoken = Token;
+    // SharedPreferences sharedPreferences = await SharedPreferences.getInstance();
+    // String? passwordtoken = sharedPreferences.getString("token");
+    const passwordtoken = Token;
     Response response;
     var url = baseUrl + changePasswordUrl;
 

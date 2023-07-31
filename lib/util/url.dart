@@ -1,7 +1,7 @@
-const baseUrl = "http://10.0.2.2:4000/api/v2/";
+const baseUrl = "http://172.20.10.2:4000/api/v2/";
 // const baseUrl = "http://localhost:4000/api/v2/";
-// const Token =
-//     "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZThmYzQ2YzQ0YTMwYTYzY2QwYjg3YSIsImlhdCI6MTY3Nzc4MTkxNiwiZXhwIjoxNjc4MzAwMzE2fQ.m4rm1Za9Uo3er2dR3EdArGLv6lzHcoAx0StwnBudJ2I";
+const Token =
+    "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZThmYzQ2YzQ0YTMwYTYzY2QwYjg3YSIsImlhdCI6MTY3NzgyNDQ2MSwiZXhwIjoxNjc4MzQyODYxfQ.FnFAmHUkCiahfsXInqkM2H5ETeCsuUT90ZUh1UyJrv0";
 
 const loginUrl = "login";
 const registerUrl = "register";
